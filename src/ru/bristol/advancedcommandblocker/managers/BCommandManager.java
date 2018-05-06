@@ -5,13 +5,15 @@ import org.bukkit.configuration.file.FileConfiguration;
 import ru.bristol.advancedcommandblocker.AdvancedCommandBlocker;
 import ru.bristol.advancedcommandblocker.types.BType;
 import ru.bristol.advancedcommandblocker.variables.BCommand;
+
+import java.util.Map;
 import java.util.HashMap;
 
 public class BCommandManager {
 
     private AdvancedCommandBlocker plugin;
     private ConfigManager configManager;
-    private HashMap<String, BCommand> commands = new HashMap<>();
+    private Map<String, BCommand> commands = new HashMap<>();
 
     public BCommandManager(AdvancedCommandBlocker plugin) {
         this.plugin = plugin;
@@ -41,7 +43,7 @@ public class BCommandManager {
         return null;
     }
 
-    public HashMap<String, BCommand> getCommands() {
+    public Map<String, BCommand> getCommands() {
         return commands;
     }
 
