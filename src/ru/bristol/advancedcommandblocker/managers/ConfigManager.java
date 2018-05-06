@@ -4,13 +4,14 @@ import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import ru.bristol.advancedcommandblocker.AdvancedCommandBlocker;
 
+import java.util.Map;
 import java.util.HashMap;
 
 public class ConfigManager {
 
     private AdvancedCommandBlocker plugin;
     private FileConfiguration config;
-    private HashMap<String, Object> settings = new HashMap<>();
+    private Map<String, Object> settings = new HashMap<>();
 
     public ConfigManager(AdvancedCommandBlocker plugin) {
         this.plugin = plugin;
